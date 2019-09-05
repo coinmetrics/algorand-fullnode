@@ -20,7 +20,7 @@ RUN set -ex; \
 	./scripts/build_prod.sh
 
 
-FROM debian:stretch
+FROM debian:latest
 
 RUN set -ex; \
 	apt-get update; \
