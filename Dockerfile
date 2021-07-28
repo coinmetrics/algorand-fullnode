@@ -14,7 +14,7 @@ RUN set -ex; \
 RUN set -ex; \
 	mkdir -p $GOPATH/src/github.com/algorand; \
 	cd $GOPATH/src/github.com/algorand; \
-	git clone --depth 1 -b v${VERSION}-stable https://github.com/algorand/go-algorand.git; \
+	git clone --depth 1 -b v${VERSION}-beta https://github.com/algorand/go-algorand.git; \
 	cd go-algorand; \
 	./scripts/configure_dev.sh; \
 	./scripts/build_prod.sh
